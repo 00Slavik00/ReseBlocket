@@ -1,4 +1,7 @@
 html,
+* {
+    box-sizing: border-box;
+}
 body {
     background-image: url('https://www.travelnews.se/wp-content/uploads/2018/06/7325a93f-2c95-486a-8b8a-834fb9b9047a.jpg');
     margin: 0;
@@ -67,24 +70,66 @@ header {
     .nav-active {
         right: 0;
     }
+    .Section {
+        flex-direction: column;
+    }
 }
+/* ----------------------------------*/
 .Section {
     display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
 }
 .Bild {
+    padding: 10px;
     margin-right: 10px;
     flex: 1;
     height: auto;
     background-color: #b3b3b373;
 
 }
+.Bild img {
+    vertical-align: middle;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(21, 50, 104, 0.432);
+}
 .Bild1 {
-    padding: 10px;
-    max-height: 100%;
-    max-width: 100%;
+    width: 100%;
 }
 .Text {
+    font-size: large;
+    color: #ccc;
+    padding: 5px 20px;
     flex: 3;
-    height: 300px;
+    height: auto;
     background-color: #23232373;
+}
+@media (max-width: 678px) {
+    .Section {
+        flex-direction: column;
+    }
+    .Bild {
+        margin: 0;
+    }
+  }
+@media (max-width: 800px) {
+    .Bild {
+        flex: 1;
+    }
+    .Text {
+        flex: 1;
+    }
+}
+footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: #232323b7;
+    height: 50px;
+}
+footer h2 {
+
 }

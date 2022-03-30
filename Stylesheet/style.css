@@ -1,15 +1,112 @@
+/* https://www.hausmangraphics.com/ ispiration */
 html,
 * {
     box-sizing: border-box;
 }
 body {
-    background-image: url('https://www.travelnews.se/wp-content/uploads/2018/06/7325a93f-2c95-486a-8b8a-834fb9b9047a.jpg');
+    background-color: rgb(168, 168, 168);
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 
 }
+.Header1 {
+    height: 880px;
+}
+img {
+    vertical-align: middle;
+    max-width: 900px;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    background-color: #343434;
+    position: relative;
+    text-align: center;
+  }
 
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  .row {
+      padding-bottom: 30px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  /*-----------------------*/
 header {
     width: 100%;
     height: 70px;
@@ -70,15 +167,15 @@ header {
     .nav-active {
         right: 0;
     }
-    .Section {
-        flex-direction: column;
-    }
+    
 }
 /* ----------------------------------*/
 .Section {
     display: flex;
     flex-direction: row;
-    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
 }
 .Bild {
     padding: 10px;
@@ -97,6 +194,7 @@ header {
     width: 100%;
 }
 .Text {
+    border-radius: 5px;
     font-size: large;
     color: #ccc;
     padding: 5px 20px;
@@ -106,7 +204,11 @@ header {
 }
 @media (max-width: 678px) {
     .Section {
-        flex-direction: column;
+        
+            flex-direction: column;
+            padding-left: 0px;
+        padding-right: 0px;
+        
     }
     .Bild {
         margin: 0;
@@ -122,14 +224,10 @@ header {
 }
 footer {
     display: flex;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     justify-content: center;
     background-color: #232323b7;
     height: 50px;
-}
-footer h2 {
-
 }

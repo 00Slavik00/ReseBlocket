@@ -1,7 +1,8 @@
 /* https://www.hausmangraphics.com/ ispiration */
-html,
+html
 * {
     box-sizing: border-box;
+    max-width: 1920px;
 }
 body {
     background-color: rgb(168, 168, 168);
@@ -210,6 +211,9 @@ header {
         padding-right: 0px;
         
     }
+    .Contact {
+      flex-direction: column;
+    }
     .Bild {
         margin: 0;
     }
@@ -222,6 +226,55 @@ header {
         flex: 1;
     }
 }
+
+.Contact {
+  display: flex;
+  background-color: #23232373;
+  margin-top: 50px;
+}
+.Contact-info {
+  flex: 1;
+
+
+}
+.Contact-info > h1 {
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+}
+.Contact-info > p {
+  text-align: center;
+  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.Contact-Connect {
+  text-align: center;
+  flex: 1;
+}
+.Contact-Connect > h1 {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+.Contact-Connect > hr {
+  margin: 0px 200px;
+}
+
+table {
+  width: 100%;
+}
+table, td {
+  color: white;
+  padding: 20px;
+  
+}
+
+
+
+
+
+
 footer {
     display: flex;
     left: 0;
@@ -230,4 +283,8 @@ footer {
     justify-content: center;
     background-color: #232323b7;
     height: 50px;
+    margin-top: 20px;
+}
+footer > h2 {
+  color: white;
 }

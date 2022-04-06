@@ -22,7 +22,6 @@ img {
   /* Position the image container (needed to position the left and right arrows) */
   .container {
     background-color: #343434;
-    position: relative;
     text-align: center;
   }
 
@@ -145,6 +144,9 @@ header {
 }
 
 @media screen and (max-width: 678px) {
+  .container1 {
+    display: none;
+  }
     .burger {
         display: block;
     }
@@ -168,6 +170,8 @@ header {
     .nav-active {
         right: 0;
     }
+
+
     
 }
 /* ----------------------------------*/
@@ -280,11 +284,14 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    justify-content: center;
     background-color: #232323b7;
-    height: 50px;
-    margin-top: 20px;
 }
 footer > h2 {
-  color: white;
+  padding-left: 30px;
+  color: rgb(155, 155, 155);
+  font-size: small;
 }
+
+
+/* ----------About------------------------*/
+

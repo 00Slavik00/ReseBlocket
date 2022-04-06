@@ -1,0 +1,40 @@
+body {
+    background: #343434;
+}
+.About {
+    display: flex;
+background-image: url("https://www.campusfrance.org/sites/default/files/medias/images/2022-02/Ocean.jpg");
+background-repeat: no-repeat;
+height: 800px;
+
+}
+.About > h1 {
+    text-align: center;
+    margin: 0px;
+    width: 700px;
+    height: 800px;
+    background-color: #34343480;
+    padding-top: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: rgb(255, 255, 255);
+    transition: width 2s;
+    left: 0;
+}
+.About > h1:hover {
+    width: 1920px;
+
+    
+}
+.About > h1:after {
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 678px) {
+    .About {
+        text-align: center;
+        background-size:800px;
+        height: 800px;
+    }
+  }

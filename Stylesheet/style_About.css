@@ -39,7 +39,8 @@ background-repeat: no-repeat;
         height: 500px;
     }
     .Info {
-        margin: 0px;
+        margin: none;
+        padding: none;
         flex-direction:column;
     }
 
@@ -47,9 +48,13 @@ background-repeat: no-repeat;
         height: 500px;
         padding-top: 100px;
     }
+
     .InfoPng > img {
-        width: 500px;
+        width: 100%;
+        height: auto;
         padding-top: 20px;
+        box-shadow: none;
+        
     }
   }
 
@@ -61,7 +66,8 @@ background-repeat: no-repeat;
       background-color: gray;
     display: flex;
     padding: 20px;
-    margin: 50px;
+    margin: 25px;
+
     
 
   }
@@ -70,10 +76,16 @@ background-repeat: no-repeat;
       color: rgb(247, 247, 247);
       flex: 1;
       background-color: rgb(168, 168, 168);
+      border-radius: 20px;
 
   }
   .InfoPng {
       text-align: center;
     flex: 1;
+    border-radius: 10px;
+  }
+  .InfoPing > img {
+    border-radius: 10px;
+    box-shadow: 10px 10px rgb(119, 119, 119);
   }
   

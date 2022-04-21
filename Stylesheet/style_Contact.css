@@ -1,0 +1,63 @@
+body {
+    background-color: #343434;
+}
+.FirstText {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #343434;
+    padding: 200px 20px;
+}
+.FirstText > h1 {
+    font-size: 50px;
+    margin: 0px;
+}
+.ContactForm {
+    margin: 100px;
+    padding: 20px;
+    background-color: rgb(155, 155, 155);
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    border-radius: 20px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  @media (max-width: 678px) {
+    .FirstText > h1 {
+        font-size: 30px;
+        margin: 0px;
+    }
+      .ContactForm {
+    margin: 0px;
+    border-radius: 0px;
+    padding: 20px;
+    
+}
+  }

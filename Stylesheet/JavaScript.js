@@ -8,7 +8,7 @@ function toggleNav() {
     burger.classList.toggle('fa-bars');
     burger.classList.toggle('fa-times');
     nav.classList.toggle('nav-active');
-    container.classList.toggle('container1');
+    //container.classList.toggle('container1');  //in case of errors
 
 }
 
